@@ -27,7 +27,7 @@ const Masthead : React.FC = () => {
       transform: `translateY(-${progress * 20}vh)`
     }}
     >
-    <video autoPlay loop muted playsInline className='absolute w-full h-full object-cover'>
+    <video autoPlay loop muted playsInline className='absolute w-full h-full object-cover opacity-40'>
       <source src='/assets/masthead-bg.mp4' type='video/mp4; codecs=hvc1' />
       <source src='/assets/masthead-bg.webm' type='video/webm; codecs=vp9' />
     </video>
