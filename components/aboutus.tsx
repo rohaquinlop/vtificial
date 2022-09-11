@@ -19,13 +19,13 @@ const AboutUs : React.FC = () => {
             id="robin"
             name="Robin"
             socialId="@rohaquinlop"
-            link="https://github.com/rohaquinlop"
+            link="https://www.linkedin.com/in/robin-hafid-quintero-lopez/"
           />
           <Member
             id="alvaro"
-            name="Alvaro"
+            name="Álvaro"
             socialId="@alvarobertin"
-            link="https://github.com/alvarobertin"
+            link="https://www.linkedin.com/in/alvaro-bertin/"
           />
         </div>
       </div>
