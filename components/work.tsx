@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 
-export const WorkContainer : React.FC = ({children}) => {
+export const WorkContainer : React.FC<{children : React.ReactNode}> = ({children}) => {
   return (
     <div className='grid grid-cols-1 lg:grid-cols-2 w-full min-h-screen'>
       {children}
@@ -18,7 +18,7 @@ export const WorkBackground : React.FC = () => {
   )
 }
 
-export const WorkLeft : React.FC<{progress: number}> = ({children, progress}) => {
+export const WorkLeft : React.FC<{children : React.ReactNode, progress: number}> = ({children, progress}) => {
   let translateY = Math.max(0, 50-progress * 3 *50)
 
   if ( progress > 0.85) translateY = Math.max(-50, -(progress - 0.85) * 2 * 50)
@@ -34,7 +34,7 @@ export const WorkLeft : React.FC<{progress: number}> = ({children, progress}) =>
   )
 }
 
-export const WorkRight : React.FC<{progress: number}> = ({children, progress}) => {
+export const WorkRight : React.FC<{children : React.ReactNode, progress: number}> = ({children, progress}) => {
   let translateY = Math.max(-50, -(progress - 0.5) * 50)
 
   return (
