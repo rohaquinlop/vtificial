@@ -37,7 +37,7 @@ const Skills : React.FC = () => {
         <div className='leading-[1.15]'>
           <div className={s.skillText} style={{opacity: opacityForBlock(progress, 0)}}>We love to solve problems and do it well.</div>
           <span className={`${s.skillText} inline-block after:content-['_']`} style={{opacity: opacityForBlock(progress, 1)}}>
-            Our team of designers, developers, computer and data scientists work to give you the best solution that fits to your requirements.
+            Our team of developers, computer and data scientists work to give you the best solution that fits to your requirements.
           </span>
           <span className={`${s.skillText} inline-block`} style={{opacity: opacityForBlock(progress, 2)}}>
             We&apos;re always looking for new ideas and new ways to solve problems, so we can make your life easier.
